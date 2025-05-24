@@ -43,11 +43,11 @@ const About: React.FC = () => {
             className="relative"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-secondary-400 rounded-xl filter blur-3xl opacity-20 transform scale-110"></div>
-            <img 
-              src="https://images.pexels.com/photos/7148384/pexels-photo-7148384.jpeg?auto=compress&cs=tinysrgb&w=600" 
-              alt="About Me" 
-              className="relative z-10 w-full h-auto rounded-xl shadow-custom dark:shadow-custom-dark object-cover"
-            />
+<img 
+  src="/images/about-thisara-bodhithunga.jpg" 
+  alt="About Me" 
+  className="w-full h-64 md:w-96 md:h-80 lg:w-[500px] lg:h-[700px] object-cover"
+/>
           </motion.div>
 
           <motion.div 
