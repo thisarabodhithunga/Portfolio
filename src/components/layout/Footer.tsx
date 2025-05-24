@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { Github, Linkedin,  Mail } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-gray-200 dark:border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-600 dark:text-gray-400">
-            © {currentYear} Portfolio. All rights reserved.
+            © {currentYear} Thisara. All rights reserved.
           </p>
         </div>
       </div>

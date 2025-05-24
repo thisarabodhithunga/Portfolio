@@ -39,6 +39,7 @@ const Skills: React.FC = () => {
       skills: [
         { name: 'Laravel', level: 88 },   // Added Laravel
         { name: 'PHP', level: 85 },
+        { name: 'Java', level: 80 },
         { name: 'Node.js', level: 50 }, 
         { name: 'Express.js', level: 50 },      // Added PHP
         { name: 'MySQL', level: 90 },      // Emphasized MySQL
