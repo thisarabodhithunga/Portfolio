@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { Link } from 'react-scroll';
-//import heroImage from '../assets/images/Hero-thisara-bodhithunga.jpg';
+
 
 const Hero: React.FC = () => {
   return (
@@ -89,7 +89,7 @@ const Hero: React.FC = () => {
     {/* Circular Image Container */}
     <div className="relative z-10 overflow-hidden rounded-full border-4 border-white/20 shadow-custom dark:shadow-custom-dark aspect-square">
       <img 
-        src="/images/Hero-thisara-bodhithunga.jpg"
+        src="assets\Hero-thisara-bodhithunga.jpg"
         alt="Portrait" 
         className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
       />

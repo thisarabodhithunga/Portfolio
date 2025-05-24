@@ -44,7 +44,7 @@ const About: React.FC = () => {
           >
             <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-secondary-400 rounded-xl filter blur-3xl opacity-20 transform scale-110"></div>
 <img 
-  src="/images/about-thisara-bodhithunga.jpg" 
+  src="assets\about-thisara-bodhithunga.jpg" 
   alt="About Me" 
   className="w-full h-64 md:w-96 md:h-80 lg:w-[500px] lg:h-[700px] object-cover"
 />
