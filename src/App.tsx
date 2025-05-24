@@ -5,14 +5,13 @@ import Home from './pages/Home';
 function App() {
   return (
     <ThemeProvider>
-      <Router basename="/Portfolio">
+      <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* Add more routes if needed */}
+          {/* Keep basename empty, let Vite handle base path */}
         </Routes>
       </Router>
     </ThemeProvider>
   );
 }
-
-export default App;
+export default App; 
