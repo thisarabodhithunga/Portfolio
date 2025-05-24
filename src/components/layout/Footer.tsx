@@ -56,9 +56,7 @@ const Footer: React.FC = () => {
               <a href="https://www.linkedin.com/in/thisara-bodhithunga" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                 <Linkedin size={20} />
               </a>
-              {/* <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-                <Twitter size={20} />
-              </a> */}
+
               <a href="mailto:thisarabodhithunga.com" className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                 <Mail size={20} />
               </a>
