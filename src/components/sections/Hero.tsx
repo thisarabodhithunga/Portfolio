@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
             <h2 className="text-2xl font-medium text-primary-600 dark:text-primary-400 mb-4">Hello, I'm</h2>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
               Thisara Bodhithunga
-            </h1>
+            </h1>            
             <h3 className="text-xl sm:text-2xl text-gray-700 dark:text-gray-300 mb-8">
   <span className="font-semibold">Full-Stack Developer</span> & <span className="font-semibold">Mobile App Specialist</span>
 </h3>
