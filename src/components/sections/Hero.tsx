@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { Link } from 'react-scroll';
+//import heroImage from '../assets/images/Hero-thisara-bodhithunga.jpg';
 
 const Hero: React.FC = () => {
   return (
@@ -26,23 +27,38 @@ const Hero: React.FC = () => {
   <span className="font-semibold">Full-Stack Developer</span> & <span className="font-semibold">Mobile App Specialist</span>
 </h3>
 <p className="text-gray-600 dark:text-gray-400 mb-8 max-w-lg">
-  I architect and develop scalable web solutions with Laravel/React and build cross-platform mobile apps using Flutter. Let's collaborate to transform your ideas into high-performance digital experiences that work seamlessly across all devices.
-</p>
+   Developing pixel-perfect web solutions using cutting-edge patterns and workflows </p>
             <div className="flex flex-wrap gap-4">
               <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-md shadow-md hover:shadow-lg transition-all duration-300"
-              >
-                View My Work
-              </motion.button>
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  className="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-md shadow-md hover:shadow-lg transition-all duration-300"
+>
+  <Link 
+    to="projects" 
+    smooth={true} 
+    duration={500} 
+    offset={-70}
+    className="cursor-pointer"
+  >
+    View My Work
+  </Link>
+</motion.button>
               <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-6 py-3 border border-primary-600 dark:border-primary-400 text-primary-600 dark:text-primary-400 font-medium rounded-md hover:bg-primary-50 dark:hover:bg-gray-800 transition-colors duration-300"
-              >
-                Contact Me
-              </motion.button>
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  className="px-6 py-3 border border-primary-600 dark:border-primary-400 text-primary-600 dark:text-primary-400 font-medium rounded-md hover:bg-primary-50 dark:hover:bg-gray-800 transition-colors duration-300"
+>
+  <Link 
+    to="contact" 
+    smooth={true} 
+    duration={500} 
+    offset={-70}
+    className="cursor-pointer"
+  >
+    Contact Me
+  </Link>
+</motion.button>
             </div>
 
             <div className="mt-12 flex space-x-6">
@@ -62,20 +78,24 @@ const Hero: React.FC = () => {
           </motion.div>
 
           <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="order-1 lg:order-2 flex justify-center"
-          >
-            <div className="relative w-full max-w-md">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-secondary-400 rounded-full filter blur-3xl opacity-20 transform scale-110"></div>
-              <img 
-                src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                alt="Portrait of Thisara Bodhithunga" 
-                className="relative z-10 w-full h-auto rounded-2xl shadow-custom dark:shadow-custom-dark object-cover"
-              />
-            </div>
-          </motion.div>
+  initial={{ opacity: 0, scale: 0.9 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.5, delay: 0.2 }}
+  className="order-1 lg:order-2 flex justify-center"
+>
+  <div className="relative w-80 h-80"> {/* Equal width and height */}
+    <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-secondary-400 rounded-full filter blur-3xl opacity-20 transform scale-110"></div>
+    
+    {/* Circular Image Container */}
+    <div className="relative z-10 overflow-hidden rounded-full border-4 border-white/20 shadow-custom dark:shadow-custom-dark aspect-square">
+      <img 
+        src="/images/Hero-thisara-bodhithunga.jpg"
+        alt="Portrait" 
+        className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+      />
+    </div>
+  </div>
+</motion.div>
         </div>
       </div>
 
