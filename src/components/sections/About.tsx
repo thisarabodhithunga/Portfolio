@@ -98,14 +98,17 @@ const About: React.FC = () => {
               </div>
             </div>
 
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-md shadow-md hover:shadow-lg transition-all duration-300 flex items-center"
-            >
-              <Download size={18} className="mr-2" />
-              Download CV
-            </motion.button>
+            <a href="files\Thisara_Resume.pdf" download>
+  <motion.button
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-md shadow-md hover:shadow-lg transition-all duration-300 flex items-center"
+  >
+    <Download size={18} className="mr-2" />
+    Download CV
+  </motion.button>
+</a>
+
           </motion.div>
         </div>
       </div>
