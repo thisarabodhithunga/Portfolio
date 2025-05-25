@@ -17,6 +17,7 @@ const Skills: React.FC = () => {
         { name: 'HTML5', level: 95 },
         { name: 'CSS3/SCSS', level: 70 },
         { name: 'Flutter', level: 90 },
+        { name: 'TailwindCSS', level: 90 },
         { name: 'JavaScript', level: 60 },
         { name: 'React.js', level: 60 },
         
@@ -40,8 +41,9 @@ const Skills: React.FC = () => {
         { name: 'Laravel', level: 88 },   // Added Laravel
         { name: 'PHP', level: 85 },
         { name: 'Java', level: 80 },
+        { name: 'Python', level: 80 },
         { name: 'Node.js', level: 50 }, 
-        { name: 'Express.js', level: 50 },      // Added PHP
+        { name: 'Firebase', level: 70 },      // Added PHP
         { name: 'MySQL', level: 90 },      // Emphasized MySQL
         { name: 'RESTful APIs', level: 90 },
         
@@ -53,6 +55,7 @@ const Skills: React.FC = () => {
       skills: [
         { name: 'Git/GitHub', level: 92 },
         { name: 'Responsive Design', level: 95 },
+        { name: 'Jira', level: 95 },
         { name: 'TailwindCSS', level: 90 },
         { name: 'Next.js', level: 52 },
         { name: 'Testing (Jest/RTL)', level: 48 },
