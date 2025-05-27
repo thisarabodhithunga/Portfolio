@@ -39,8 +39,8 @@ const Projects: React.FC = () => {
       description: "Developed a Flutter-based mobile app for quantitative conversation analysis using Google's Speech-to-Text API and speaker diarization. Processes audio to calculate speaking time metrics (WTA/WTB), silence intervals (STA/STB/STM), and turn-taking patterns. Features real-time analytics dashboard with 8 conversational KPIs, Firebase-backed session history, and exportable reports. Integrated audio waveform visualization and minimalist recording controls to meet clinical research requirements for measurable dialogue assessment",
       image: 'https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=600',
       tags: ['Flutter',' Dart',' Firebase', 'Google Speech-to-Text', 'Audio Diarization',' Real-time Analytics'],
-      demoLink: 'https://example.com',
-      repoLink: 'https://github.com',
+      demoLink: '#',
+      repoLink: '#',
       category: 'fullstack',
     },
     {
@@ -60,7 +60,7 @@ const Projects: React.FC = () => {
       image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600',
       tags: ['Java',' Swing','MySQL','Desktop Application'],
       demoLink: 'https://example.com',
-      repoLink: 'https://github.com',
+      repoLink: 'https://github.com/sasankadeshapriya/tecmis.git',
       category: 'fullstack',
     },
     {

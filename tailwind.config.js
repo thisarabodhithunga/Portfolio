@@ -41,6 +41,15 @@ export default {
         'custom': '0 4px 20px rgba(0, 0, 0, 0.08)',
         'custom-dark': '0 4px 20px rgba(0, 0, 0, 0.2)',
       },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+    '100%': { transform: 'translateX(-50%)' },
+        },
+      },
+      animation: {
+        marquee: 'marquee 10s linear infinite',
+      },
     },
   },
   plugins: [],

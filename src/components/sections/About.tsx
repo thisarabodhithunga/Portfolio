@@ -40,14 +40,16 @@ const About: React.FC = () => {
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             transition={{ duration: 0.5 }}
-            className="relative"
+            className="relative flex justify-center"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-secondary-400 rounded-xl filter blur-3xl opacity-20 transform scale-110"></div>
-<img 
-  src="assets\about-thisara-bodhithunga.jpg" 
-  alt="About Me" 
-  className="w-full h-64 md:w-96 md:h-80 lg:w-[500px] lg:h-[700px] object-cover"
-/>
+            {/* Simple oval image container with hover effect */}
+            <div className="relative w-64 h-80 md:w-80 md:h-96 lg:w-96 lg:h-[500px] overflow-hidden rounded-full transition-all duration-300 hover:scale-105">
+              <img 
+                src="assets/about-thisara-bodhithunga.jpg" 
+                alt="Thisara Bodhithunga"
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
           </motion.div>
 
           <motion.div 
@@ -60,15 +62,15 @@ const About: React.FC = () => {
               Full-Stack Web & Mobile Developer
             </h3>
             <p className="text-gray-600 dark:text-gray-400 mb-6">
-              I'm a passionate full-stack developer specializing in cross-platform solutions with 
-    3+ years of experience building robust web and mobile applications. Proficient in 
-    React, Flutter, and Laravel, I create seamless digital experiences that bridge 
-    mobile and web platforms.
+              I'm a passionate Software Engineering undergraduate at the University of Ruhuna, 
+              specializing in the MERN stack (MongoDB, Express.js, React, Node.js). I love coding, 
+              problem-solving, and building efficient web applications. Always eager to learn, 
+              innovate, and contribute to real-world projects.
             </p>
             <p className="text-gray-600 dark:text-gray-400 mb-8">
-               My development approach emphasizes clean architecture, performance optimization, 
-    and user-centric design. I excel at building RESTful APIs, progressive web apps, 
-    and native mobile solutions that maintain feature parity across platforms.
+              With 3+ years of experience building robust applications, I create seamless digital 
+              experiences that bridge mobile and web platforms. My development approach emphasizes 
+              clean architecture, performance optimization, and user-centric design.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
@@ -82,7 +84,7 @@ const About: React.FC = () => {
               </div>
               <div className="flex items-center">
                 <MapPin size={20} className="text-primary-600 dark:text-primary-400 mr-2" />
-                <span className="text-gray-700 dark:text-gray-300">Ratnapura ,Sri Lanka</span>
+                <span className="text-gray-700 dark:text-gray-300">Ratnapura, Sri Lanka</span>
               </div>
               <div className="flex items-center">
                 <Briefcase size={20} className="text-primary-600 dark:text-primary-400 mr-2" />
@@ -98,17 +100,18 @@ const About: React.FC = () => {
               </div>
             </div>
 
-            <a href="files\Thisara_Resume.pdf" download>
-  <motion.button
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-    className="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-md shadow-md hover:shadow-lg transition-all duration-300 flex items-center"
-  >
-    <Download size={18} className="mr-2" />
-    Download CV
-  </motion.button>
-</a>
-
+            <div className="flex gap-4">
+              <a href="files/Thisara_Resume.pdf" download>
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-md shadow-md hover:shadow-lg transition-all duration-300 flex items-center"
+                >
+                  <Download size={18} className="mr-2" />
+                  Download CV
+                </motion.button>
+              </a>
+            </div>
           </motion.div>
         </div>
       </div>
