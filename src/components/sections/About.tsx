@@ -101,7 +101,7 @@ const About: React.FC = () => {
             </div>
 
             <div className="flex gap-4">
-              <a href="files/Thisara_Resume.pdf" download>
+              <a href="./files/Thisara_CV.pdf" download>
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
